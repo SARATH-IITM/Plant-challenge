@@ -113,7 +113,7 @@
 <section id="Contribute-section">
   <div class="container">
     <h1>Contribute Your Ideas</h1>
-<form id="contact_form"  action="">
+<form id="contact_form", action="">
     <div class="mb-5 row">
         <div class="col">
             <label>First Name</label>
@@ -154,7 +154,7 @@
   <div class="container">
     <div class="row">
       <div class="col-md-12 text-center">
-        <p>Copyrights</p>
+        <p>Created by SARATH_C</p>
       </div>
 
     </div>
@@ -166,10 +166,10 @@
       $("#contact_form").submit((e)=>{
           e.preventDefault()
           $.ajax({
-              url:"https://script.google.com/macros/s/AKfycbyyK5Jkv0FMn1XDzfAoiRMwH3ARi_wMJQ-3O8VEp9KsQFC8Nevvfv3ik0y0V2xZRg1k/exe",
-              crossdomain:true,
+              url:"https://script.google.com/macros/s/AKfycbyyK5Jkv0FMn1XDzfAoiRMwH3ARi_wMJQ-3O8VEp9KsQFC8Nevvfv3ik0y0V2xZRg1k/exec",
               data:$("#contact_form").serialize(),
               method:"post",
+              crossDomain:true,
               success:function (response){
                   alert("Form submitted successfully")
                   window.location.reload()
