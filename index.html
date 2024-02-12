@@ -169,6 +169,9 @@
               url:"https://script.google.com/macros/s/AKfycbyyK5Jkv0FMn1XDzfAoiRMwH3ARi_wMJQ-3O8VEp9KsQFC8Nevvfv3ik0y0V2xZRg1k/exec",
               data:$("#contact_form").serialize(),
               method:"post",
+              headers:{
+                  "Access-Control-Allow-Origin":"*"
+              }
               success:function (response){
                   alert("Form submitted successfully")
                   window.location.reload()
